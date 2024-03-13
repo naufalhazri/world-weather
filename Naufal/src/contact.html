@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - World Weather</title>
+    <style>
+        body {
+            background-color: #f0f3f5; /* Cloudy sky background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #b0c4de; /* Light blue header background */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #708090; /* Gray border bottom */
+        }
+
+        h1 {
+            color: #4682b4; /* Steel blue text color */
+            margin: 5px 0;
+        }
+
+        nav {
+            background-color: #b0c4de; /* Light blue navigation background */
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #778899; /* Light slate gray text color */
+            text-decoration: none;
+            margin: 0 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            border-color: #778899; /* Light slate gray border color on hover */
+        }
+
+        main {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #ffffff; /* White section background */
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #b0c4de; /* Light blue footer background */
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer p {
+            color: #778899; /* Light slate gray text color */
+            font-size: 14px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button[type="submit"] {
+            background-color: #4682b4; /* Steel blue button background */
+            color: #ffffff; /* White button text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #5c9cd2; /* Lighter steel blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="bookmarks.html">Bookmarks</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section id="contact-info">
+        <h2>Contact Information</h2>
+        <p>Feel free to reach out to us with any questions, feedback, or inquiries. We're here to help!</p>
+        <ul>
+            <li>Email: contact@worldweather.com</li>
+            <li>Phone: +1 (123) 456-7890</li>
+            <li>Address: 123 Weather Street, City, Country</li>
+        </ul>
+    </section>
+
+    <section id="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="submit_contact_form.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 World Weather. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+

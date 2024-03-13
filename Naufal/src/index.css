@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #add8e6; /* Baby blue background */
+}
+
+header {
+  background-color: #333; /* Dark gray header */
+  color: #fff; /* White text */
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #fff; /* White */
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #000; /* Black */
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #000; /* Black */
+  color: #fff; /* White */
+}
+
+.resultContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+  margin: 10px;
+}
+
+#weatherContainer {
+  flex: 3; /* Weather section takes 75% of the width */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  color: #fff; /* White text */
+  text-align: center;
+  margin: 10px;
+  height: 75%;
+}
+
+#newsContainer {
+  flex: 1; /* News section takes 25% of the width */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  color: #fff; /* White text */
+  text-align: center;
+  margin: 10px;
+}
+
+#contentContainer{
+  flex: 3; /* Weather section takes 75% of the width */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  color: #fff; /* White text */
+  text-align: left;
+  margin: 10px;
+  height: 75%;
+}
+
+#contact-info {
+  flex: 1;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#contact-form {
+  flex: 1;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+
+footer {
+  background-color: #000; /* Black */
+  color: #fff; /* White */
+  text-align: center;
+  padding: 10px;
+}

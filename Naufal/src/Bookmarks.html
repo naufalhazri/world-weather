@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Weather</title>
+    <style>
+        body {
+            background-color: #f0f3f5; /* Cloudy sky background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #b0c4de; /* Light blue header background */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #708090; /* Gray border bottom */
+        }
+
+        h1 {
+            color: #4682b4; /* Steel blue text color */
+            margin: 5px 0;
+        }
+
+        input[type="text"],
+        button {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="text"] {
+            width: 200px;
+        }
+
+        button {
+            background-color: #4682b4; /* Steel blue button background */
+            color: #ffffff; /* White button text color */
+            cursor: pointer;
+        }
+
+        nav {
+            background-color: #b0c4de; /* Light blue navigation background */
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #778899; /* Light slate gray text color */
+            text-decoration: none;
+            margin: 0 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            border-color: #778899; /* Light slate gray border color on hover */
+        }
+
+        #bookmarksSection {
+            text-align: center;
+            margin-top: 20px;
+            padding-bottom: 50px; /* Added padding-bottom to create space above the footer */
+        }
+
+        #bookmarksContainer {
+            background-color: #ffffff; /* White bookmarks container background */
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #b0c4de; /* Light blue footer background */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            color: #778899; /* Light slate gray text color */
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>World Weather</h1>
+    <input type="text" id="city-input" placeholder="Enter City">
+    <button onclick="buttonClicked()">Search</button>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Bookmarks.html">Bookmarks</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Bookmarks Section -->
+<section id="bookmarksSection">
+    <h2>Bookmarked Cities</h2>
+    <div id="bookmarksContainer"></div>
+</section>
+
+<footer>
+    <p>&copy; 2024 World Weather. All rights reserved.</p>
+</footer>
+
+<script src="bookmarks.js"></script>
+
+</body>
+</html>
